@@ -17,34 +17,9 @@ function Footer() {
           ))}
         </div>
 
-        {/* Navigation Links */}
-        <div className="flex justify-center flex-wrap gap-8 font-semibold text-lg mb-6">
-          {[
-            { name: "About", id: "about" },
-            { name: "Education", id: "education" },
-            { name: "Skills", id: "skills" },
-            { name: "Experience", id: "experience" },
-            { name: "Projects", id: "projects" },
-          ].map((link) => (
-            <a
-              key={link.id}
-              href={`#${link.id}`}
-              className="hover:text-purple-400 transition cursor-pointer"
-              onClick={(e) => {
-                e.preventDefault();
-                const element = document.getElementById(link.id);
-                if (element) {
-                  element.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-            >
-              {link.name}.
-            </a>
-          ))}
-        </div>
         {/* Copyright */}
         <p className="text-sm text-purple-400">
-          © 2024 All Rights Reserved by{" "}
+          © 2025 All Rights Reserved by{" "}
           <span className="text-purple-500 font-semibold">ThemeJunction</span>
         </p>
       </footer>
