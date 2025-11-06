@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Playwrite+PL:wght@100..400&display=swap');
+
+@import "tailwindcss";
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.rum {
+  animation: slide 20s linear infinite;
+}
+
+.playwrite-pl {
+    font-family: "Patua One", serif;
+  font-weight: 900;
+  font-style: normal;
+}
